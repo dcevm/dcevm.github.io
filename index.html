@@ -34,9 +34,7 @@
         <h1>
 <a name="dcevm" class="anchor" href="#dcevm"><span class="octicon octicon-link"></span></a>DCEVM</h1>
 
-<p>This project is a fork of original <a href="http://ssw.jku.at/dcevm/">DCEVM</a> project.</p>
-
-<p>The purpose of the project is to maintain enhanced class redefinition functionality for OpenJDK HotSpot 7/8.</p>
+<p>This project is a fork of original <a href="http://ssw.jku.at/dcevm/">DCEVM</a> project. The purpose of the project is to maintain enhanced class redefinition functionality for OpenJDK HotSpot 7/8.</p>
 
 <h2>
 <a name="binaries" class="anchor" href="#binaries"><span class="octicon octicon-link"></span></a>Binaries</h2>
@@ -45,68 +43,14 @@
 <li><a href="https://github.com/dcevm/dcevm/releases/download/light-jdk7u51%2B3/installer-light-jdk7u51.3.jar">Java 7 update 51</a></li>
 <li><a href="https://github.com/dcevm/dcevm/releases/download/light-jdk8u5%2B36/installer-light-jdk8u5.36.jar">Java 8 update 5</a></li>
 <li><a href="https://github.com/dcevm/dcevm/releases/download/full-7u51%2B3/installer-full-jdk7u51.3.jar">Java 7 update 51</a></li>
-</ul><p>Usage:</p>
+</ul><h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <ul>
 <li>Run <code>java -jar installer.jar</code>
 </li>
 <li>Follow the instructions to install DCEVM into existing JDK/JRE</li>
-</ul><h2>
-<a name="supported-versions" class="anchor" href="#supported-versions"><span class="octicon octicon-link"></span></a>Supported versions</h2>
-
-<p><a href="patches/">pathes/</a> contains patches for all supported versions. Each patch is named by concatenating prefix <code>full</code> or <code>light</code> with the OpenJDK HotSpot tag. <code>full</code> patches support full redefenition capabilities (including removal of superclasses, for example). <code>light</code> patches are easier to maintain, but they only support limited functionality (generally, additions to class hierarchies are fine, removals are not).</p>
-
-<p>HotSpot tag is the name of the tag in the corresponding HotSpot Mercurial repository (<a href="http://hg.openjdk.java.net/jdk8u/jdk8u/hotspot">Java 8</a>/<a href="http://hg.openjdk.java.net/jdk7u/jdk7u/hotspot">Java 7</a>).</p>
-
-<h2>
-<a name="building" class="anchor" href="#building"><span class="octicon octicon-link"></span></a>Building</h2>
-
-<h3>
-<a name="general-requirements" class="anchor" href="#general-requirements"><span class="octicon octicon-link"></span></a>General Requirements</h3>
-
-<p>You need the following software to build DCEVM:</p>
-
-<ul>
-<li>Java 7 or later. If you intend to run tests, it should be one of the supported versions (see list of <a href="patches/">patches/</a>)</li>
-<li>C++ compiler toolchain (gcc). There is no strict version requirement except that it should be supported by HotSpot build scripts.</li>
-<li>Mercurial</li>
-</ul><h3>
-<a name="compiling-dcevm" class="anchor" href="#compiling-dcevm"><span class="octicon octicon-link"></span></a>Compiling DCEVM</h3>
-
-<ul>
-<li>Configure version you want in <a href="gradle.properties">gradle.properties</a>.</li>
-<li>Run <code>./gradlew patch</code> to retrieve HotSpot sources and patch them.</li>
-<li>Run <code>./gradlew compileFastdebug</code> to build <code>fastdebug</code> version or <code>./gradlew compileProduct</code> to build <code>product</code> version.</li>
-<li>Compiled libraries are placed in <code>hotspot/build/fastdebug</code> or <code>hotspot/build/product</code>.</li>
-<li><h3>
-<a name="installing-dcevm" class="anchor" href="#installing-dcevm"><span class="octicon octicon-link"></span></a>Installing DCEVM</h3></li>
-<li><p>Replace <code>libjvm.so/jvm.dll/libjvm.dylib</code> in the target JRE.</p></li>
-<li>Run <code>java -version</code>, it should include <code>Dynamic Code Evolution</code> string.</li>
-</ul><p>Or you can install DCEVM using the gradle script:</p>
-
-<ul>
-<li>Run <code>./gradlew installFastdebug -PtargetJre=$JAVA_HOME/jre</code> or <code>./gradlew installProduct -PtargetJre=$JAVA_HOME/jre</code>
-</li>
-<li>DCEVM will be installed as "alternative" JVM. To use it, add <code>-XXaltjvm=dcevm</code>
-</li>
-</ul><h3>
-<a name="testing-dcevm" class="anchor" href="#testing-dcevm"><span class="octicon octicon-link"></span></a>Testing DCEVM</h3>
-
-<ul>
-<li>Configure version you want in <a href="gradle.properties">gradle.properties</a>.</li>
-<li>Set <code>JAVA_HOME</code> to point to JDK you want to test against (should be compatible with the version you set in <a href="gradle.properties">gradle.properties</a>).</li>
-<li>Run <code>./gradlew patch</code> to retrieve HotSpot sources and patch them.</li>
-<li>Run <code>./gradlew test</code> to run tests.</li>
-<li>Tests reports will be in <code>dcevm/build/reports/tests/index.html</code>
-</li>
-</ul><p>To run tests from IDE, you need:</p>
-
-<ul>
-<li>Run <code>./gradlew agent:build</code> to build redefinition agent code.</li>
-<li>Add JVM argument to use redefinition agent (<code>-javaagent:agent/build/libs/agent.jar</code>).</li>
-<li>Add JVM argument to DCEVM VM if installed side-by-side (<code>-XXaltjvm=dcevm</code>).</li>
-</ul><h3>
-<a name="known-issues" class="anchor" href="#known-issues"><span class="octicon octicon-link"></span></a>Known issues</h3>
+</ul>
       </section>
     </div>
 
