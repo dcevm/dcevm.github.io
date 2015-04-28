@@ -1,49 +1,37 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="DCEVM : Enhanced class redefinition for Java">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>DCEVM</title>
+    <meta charset="UTF-8">
+    <title>DCEVM by dcevm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">DCEVM</h1>
+      <h2 class="project-tagline">Enhanced class redefinition for Java</h2>
+      <a href="https://github.com/dcevm/dcevm" class="btn">View on GitHub</a>
+      <a href="https://github.com/dcevm/dcevm/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/dcevm/dcevm/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/dcevm/dcevm">View on GitHub</a>
-
-          <h1 id="project_title">DCEVM</h1>
-          <h2 id="project_tagline">Enhanced class redefinition for Java</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/dcevm/dcevm/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/dcevm/dcevm/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="dcevm" class="anchor" href="#dcevm"><span class="octicon octicon-link"></span></a>DCEVM</h1>
+    <section class="main-content">
+      <h1>
+<a id="dcevm" class="anchor" href="#dcevm" aria-hidden="true"><span class="octicon octicon-link"></span></a>DCEVM</h1>
 
 <p>This project is a fork of original <a href="http://ssw.jku.at/dcevm/">DCEVM</a> project. The purpose of the project is to maintain enhanced class redefinition functionality for OpenJDK HotSpot 7/8.</p>
 
 <h2>
-<a name="binaries" class="anchor" href="#binaries"><span class="octicon octicon-link"></span></a>Binaries</h2>
+<a id="binaries" class="anchor" href="#binaries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binaries</h2>
 
 <p>Light:</p>
 
 <ul>
 <li><a href="https://github.com/dcevm/dcevm/releases/download/light-jdk7u71%2B2/installer-light-jdk7u71.2.jar">Java 7 update 71, build 2</a></li>
-<li><a href="https://github.com/dcevm/dcevm/releases/download/light-jdk8u5%2B52/installer-light-jdk8u5.52.jar">Java 8 update 5, build 52</a></li>
+<li><a href="https://github.com/dcevm/dcevm/releases/download/light-jdk8u45%2B3/DCEVM-light-8u45-installer.jar">Java 8 update 45, build 3</a></li>
 </ul>
 
 <p>Full:</p>
@@ -55,30 +43,28 @@
 <p>Full version supports more features (for example, it supports removal of superclasses), but is harder to maintain. Thus, it is only supported for fewer versions of OpenJDK. Light version supports less features (still, it is pretty advanced compared to OpenJDK out-of-the box redefinition functionality), but is easier to keep up with the OpenJDK HotSpot.</p>
 
 <h2>
-<a name="sources" class="anchor" href="#sources"><span class="octicon octicon-link"></span></a>Sources</h2>
+<a id="sources" class="anchor" href="#sources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sources</h2>
 
 <p>Sources of the patches are available <a href="https://github.com/dcevm/dcevm">here</a>.</p>
 
 <h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <ul>
 <li>Run <code>java -jar installer.jar</code>
 </li>
 <li>Follow the instructions to install DCEVM into existing JDK/JRE</li>
 </ul>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">DCEVM maintained by <a href="https://github.com/dcevm">dcevm</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/dcevm/dcevm">DCEVM</a> is maintained by <a href="https://github.com/dcevm">dcevm</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-              <script type="text/javascript">
+    </section>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -89,6 +75,6 @@
             } catch(err) {}
           </script>
 
-
   </body>
 </html>
+
