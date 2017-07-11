@@ -1,0 +1,8 @@
+title: DCEVM
+description: Enhanced class redefinition for Java
+google_analytics: UA-50471431-1
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
