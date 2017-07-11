@@ -6,7 +6,7 @@ This project is a fork of original [DCEVM](http://ssw.jku.at/dcevm/) project. Th
 
 Light:
  * [Java 7 update 79, build 3](https://github.com/dcevm/dcevm/releases/download/light-jdk7u79%2B3/DCEVM-light-7u79-installer.jar)
- * [Java 8 update 112, build 8](https://github.com/dcevm/dcevm/releases/download/light-jdk8u112%2B8/DCEVM-light-8u112-installer.jar)
+ * [Java 8 update 112, build 9](https://github.com/dcevm/dcevm/releases/download/light-jdk8u112%2B9/DCEVM-light-8u112-installer.jar)
 
 Full:
  * [Java 7 update 79, build 8](https://github.com/dcevm/dcevm/releases/download/full-jdk7u79%2B8/DCEVM-full-7u79-installer.jar)
