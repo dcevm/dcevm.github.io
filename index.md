@@ -14,7 +14,8 @@ Full:
 Java9
  * [Java 9](https://github.com/HotswapProjects/openjdk-jdk9/releases)
  
-Full version supports more features (for example, it supports removal of superclasses), but is harder to maintain. Thus, it is only supported for fewer versions of OpenJDK. Light version supports less features (still, it is pretty advanced compared to OpenJDK out-of-the box redefinition functionality), but is easier to keep up with the OpenJDK HotSpot.
+The full version supports more features (for example, it supports the removal of superclasses), but it is harder to maintain. Thus, it is supported for fewer versions of OpenJDK. The light version supports fewer features, but it is still more advanced than the default OpenJDK redefinition functionality, and it is easier to keep in sync with the OpenJDK HotSpot.
+
 
 ## Sources
 
