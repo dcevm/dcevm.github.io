@@ -4,7 +4,7 @@ This project is a fork of original [DCEVM](http://ssw.jku.at/dcevm/) project. Th
 
 ## NEWS Java 11 beta
 
- * [Java 11 beta](https://github.com/HotswapProjects/openjdk-jdk11/releases/tag/dcevm-11.0.beta) with integrated hotswap-agent.jar
+ * [Java 11 beta](https://github.com/HotswapProjects/openjdk-jdk11/releases/tag/dcevm-11.0.beta) with integrated hotswap-agent.jar, including full jdk package.
 
 ## Binaries
  * [Java 8 update 181](https://github.com/dcevm/dcevm/releases/download/light-jdk8u181/DCEVM-8u181-installer.jar)
@@ -22,10 +22,6 @@ The full version supports more features (for example, it supports the removal of
 ## Sources
 
 Sources of the patches are available [here](https://github.com/dcevm/dcevm).
-
-### Java9
-
-Sources for dcevm9 are available [here](https://github.com/HotswapProjects/openjdk-jdk9/tree/dcevm)
 
 ## Usage
 
