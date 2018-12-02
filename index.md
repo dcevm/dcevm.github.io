@@ -2,7 +2,7 @@
 
 This project is a fork of original [DCEVM](http://ssw.jku.at/dcevm/) project. The purpose of the project is to maintain enhanced class redefinition functionality for OpenJDK HotSpot 7/8/9/10/11 and Oracle JVM.
 
-## NEWS Dcevm-11(beta) on Trava OpenJDK
+## NEWS : Dcevm-11 on Trava OpenJDK
 
  * [Java 11](https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases) with integrated hotswap-agent.jar, including full jdk package.
 
